@@ -13,7 +13,7 @@
   <div style="background:#1C1C1E;border-radius:16px 16px 0 0;padding:32px 28px 24px">
     <div style="font-size:11px;font-weight:700;color:#636366;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px">MORNING BRIEFING</div>
     <div style="font-size:26px;font-weight:800;color:#FFFFFF;letter-spacing:-0.5px">아침 브리핑</div>
-    <div style="font-size:13px;color:#8E8E93;margin-top:6px">2026.05.15 (금) · 21:48 자동 발송</div>
+    <div style="font-size:13px;color:#8E8E93;margin-top:6px">2026.05.15 (금) · 21:58 자동 발송</div>
     <div style="margin-top:16px">
       <span style="display:inline-block;background:#34C75922;color:#34C759;font-size:12px;font-weight:700;padding:5px 14px;border-radius:100px;border:1px solid #34C75944">강세장</span>
     </div>
@@ -88,12 +88,12 @@
         </tr>
         <tr style="border-bottom:1px solid #F2F2F7">
           <td style="font-size:14px;font-weight:600;color:#1C1C1E;padding:12px 12px 12px 0">WTI 원유</td>
-          <td style="text-align:right;font-size:14px;font-weight:700;color:#1C1C1E;padding:12px 8px">$99.97</td>
-          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#FF3B30;font-weight:600">-1.19%</span></td>
-          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+4.77%</span></td>
-          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+5.58%</span></td>
+          <td style="text-align:right;font-size:14px;font-weight:700;color:#1C1C1E;padding:12px 8px">$99.93</td>
+          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#FF3B30;font-weight:600">-1.23%</span></td>
+          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+4.73%</span></td>
+          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+5.53%</span></td>
           <td style="text-align:right;font-size:13px;padding:12px 0 12px 8px">
-            <span style="display:inline-block;padding:3px 8px;background:#F0FFF4;border-radius:6px;"><span style="color:#34C759;font-weight:600">+58.96%</span></span>
+            <span style="display:inline-block;padding:3px 8px;background:#F0FFF4;border-radius:6px;"><span style="color:#34C759;font-weight:600">+58.90%</span></span>
           </td>
         </tr>
         <tr style="border-bottom:1px solid #F2F2F7">
@@ -108,16 +108,17 @@
         </tr>
         <tr style="border-bottom:1px solid #F2F2F7">
           <td style="font-size:14px;font-weight:600;color:#1C1C1E;padding:12px 12px 12px 0">미국 10년 국채</td>
-          <td style="text-align:right;font-size:14px;font-weight:700;color:#1C1C1E;padding:12px 8px">4.550%</td>
-          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+2.04%</span></td>
-          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+4.31%</span></td>
-          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+5.64%</span></td>
+          <td style="text-align:right;font-size:14px;font-weight:700;color:#1C1C1E;padding:12px 8px">4.560%</td>
+          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+2.17%</span></td>
+          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+4.45%</span></td>
+          <td style="text-align:right;font-size:13px;padding:12px 8px"><span style="color:#34C759;font-weight:600">+5.78%</span></td>
           <td style="text-align:right;font-size:13px;padding:12px 0 12px 8px">
-            <span style="display:inline-block;padding:3px 8px;background:#F0FFF4;border-radius:6px;"><span style="color:#34C759;font-weight:600">+12.23%</span></span>
+            <span style="display:inline-block;padding:3px 8px;background:#F0FFF4;border-radius:6px;"><span style="color:#34C759;font-weight:600">+12.38%</span></span>
           </td>
         </tr></tbody></table></div>
   </div>
 
+  
   <!-- 시장 추세 차트 -->
   <div style="background:#FFFFFF;padding:24px 20px;border-bottom:1px solid #F2F2F7">
     <div style="font-size:12px;font-weight:700;color:#8E8E93;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px">📈 시장 추세 (3개월)</div>
@@ -156,15 +157,24 @@
             options: {
               responsive: true,
               maintainAspectRatio: false,
+              interaction: { mode: 'index', intersect: false },
               plugins: {
                 legend: { display: false },
                 tooltip: {
-                  backgroundColor: 'rgba(28,28,30,0.9)',
+                  enabled: true,
+                  mode: 'index',
+                  intersect: false,
+                  backgroundColor: 'rgba(28,28,30,0.92)',
                   titleColor: '#FFFFFF',
                   bodyColor: '#EBEBF5',
+                  titleFont: { size: 12, weight: '600' },
+                  bodyFont: { size: 13 },
                   cornerRadius: 10,
-                  padding: 10,
+                  padding: 12,
                   displayColors: false,
+                  callbacks: {
+                    label: function(ctx) { return ' ' + ctx.formattedValue; }
+                  }
                 }
               },
               scales: {
@@ -221,15 +231,24 @@
             options: {
               responsive: true,
               maintainAspectRatio: false,
+              interaction: { mode: 'index', intersect: false },
               plugins: {
                 legend: { display: false },
                 tooltip: {
-                  backgroundColor: 'rgba(28,28,30,0.9)',
+                  enabled: true,
+                  mode: 'index',
+                  intersect: false,
+                  backgroundColor: 'rgba(28,28,30,0.92)',
                   titleColor: '#FFFFFF',
                   bodyColor: '#EBEBF5',
+                  titleFont: { size: 12, weight: '600' },
+                  bodyFont: { size: 13 },
                   cornerRadius: 10,
-                  padding: 10,
+                  padding: 12,
                   displayColors: false,
+                  callbacks: {
+                    label: function(ctx) { return ' ' + ctx.formattedValue; }
+                  }
                 }
               },
               scales: {
@@ -287,15 +306,24 @@
             options: {
               responsive: true,
               maintainAspectRatio: false,
+              interaction: { mode: 'index', intersect: false },
               plugins: {
                 legend: { display: false },
                 tooltip: {
-                  backgroundColor: 'rgba(28,28,30,0.9)',
+                  enabled: true,
+                  mode: 'index',
+                  intersect: false,
+                  backgroundColor: 'rgba(28,28,30,0.92)',
                   titleColor: '#FFFFFF',
                   bodyColor: '#EBEBF5',
+                  titleFont: { size: 12, weight: '600' },
+                  bodyFont: { size: 13 },
                   cornerRadius: 10,
-                  padding: 10,
+                  padding: 12,
                   displayColors: false,
+                  callbacks: {
+                    label: function(ctx) { return ' ' + ctx.formattedValue; }
+                  }
                 }
               },
               scales: {
@@ -328,52 +356,52 @@
     
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">1. 🇺🇸 미국 시장</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">오늘 다우존스, S&P 500, 나스닥이 모두 상승하며 다우지수가 50,000포인트를 넘어섰습니다. S&P 500은 0.77% 상승했습니다. 나스닥은 0.88% 상승했다.</div>
-          <div style="margin-top:8px"><a href="https://www.youtube.com/watch?v=7KzTspTttro" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → [굿모닝 마켓] 다우 5만선 돌파…S&P500·나스닥 사상 최고치 경신</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">오늘 현재 S&P 500은 0.77% 상승한 7,501.24를 기록하고 있습니다. 나스닥 종합지수는 0.88% 상승한 26,635.22를 기록했습니다. 다우존스 산업평균지수는 0.75% 상승한 50,063.46을 기록했습니다.</div>
+          <div style="margin-top:8px"><a href="https://news.nate.com/view/20260515n02937?mid=n1101" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → [뉴욕증시] S&P500, 나스닥 사상 최고치…다우도 5만 회복 - 네이...</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">2. 🇰🇷 한국 시장</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">오늘 기준 코스피지수는 488.23포인트(6.12%) 하락한 7,493.18을 기록하고 있습니다. 시장은 잠시 8,000포인트를 돌파한 뒤 변동성을 겪었습니다. 삼성전자, SK하이닉스 등 핵심 기술주는 큰 폭의 하락세를 보였다.</div>
-          <div style="margin-top:8px"><a href="https://www.youtube.com/watch?v=PxmXb6Uo77U" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 코스피 8,000선 돌파했지만…차익 실현에 하락 전환 / 연합뉴스TV (...</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">오늘 기준 코스피지수는 488.23포인트(6.12%) 하락한 7,493.18을 기록하고 있습니다. 코스닥 지수도 하락세를 보이며 차익실현이 심각한 시장 불안을 반영했다. 삼성전자, SK하이닉스 등 주요 기술주들이 큰 손실을 입고 있다.</div>
+          <div style="margin-top:8px"><a href="https://www.youtube.com/watch?v=PxmXb6Uo77U" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → KOSPI breaks 8,000 mark but… turns downw...</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">3. 🔬 반도체·AI</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">SK하이닉스 시가총액이 AI 메모리 수요에 힘입어 1000조원을 돌파했다. 삼성전자와 SK하이닉스가 AI 기반 반도체 발전을 선도하고 있다. NVIDIA는 고급 컴퓨팅 기술로 삼성의 AI 공장을 지원합니다.</div>
-          <div style="margin-top:8px"><a href="https://news.skhynix.co.kr/" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → SK hynix Newsroom – 'SK하이닉스 뉴스룸'은 SK하이닉스...</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">삼성전자, 엔비디아, SK하이닉스가 AI 반도체 기술을 선도하고 있으며, 삼성과 엔비디아는 제조 효율성을 높이기 위해 첨단 GPU를 활용한 AI 공장을 짓고 있다. SK하이닉스가 AI 메모리 수요 호조에 힘입어 시가총액 1000조원을 돌파하는 등 눈에 띄는 성장을 이뤘다.</div>
+          <div style="margin-top:8px"><a href="https://dbr.donga.com/kfocus/view/article_no/736" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 삼성전자, 엔비디아와 25년 동맹 결실… 지능형 반도체 AI 팩토리 구축...</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">4. 🌐 국제 경제</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">미중 무역전쟁으로 인해 양국이 서로의 상품에 관세를 부과하면서 상당한 관세와 경제적 긴장이 초래되었습니다. 분쟁은 세계 시장과 무역 관계에 영향을 미쳐 다른 국가들이 새로운 무역 파트너십을 모색하게 만들었습니다. 상황은 여전히 ​​복잡하고 진행 중이며, 이는 세계 경제 안정에 중대한 영향을 미칩니다.</div>
-          <div style="margin-top:8px"><a href="https://ko.wikipedia.org/wiki/%EB%AF%B8%EA%B5%AD-%EC%A4%91%EA%B5%AD_%EB%AC%B4%EC%97%AD_%EC%A0%84%EC%9F%81" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 미국-중국 무역 전쟁</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">미국과 중국은 서로의 상품에 상당한 관세를 부과하는 등 장기간의 무역 전쟁을 벌여 세계 경제 안정에 영향을 미쳤습니다. 최근 협상에서는 상호 관세 인하를 목표로 하고 있다. 분쟁은 공급망과 국제 무역 관계에 영향을 미쳐 전 세계적으로 영향을 미칩니다.</div>
+          <div style="margin-top:8px"><a href="https://ko.wikipedia.org/wiki/%EB%AF%B8%EA%B5%AD-%EC%A4%91%EA%B5%AD_%EB%AC%B4%EC%97%AD_%EC%A0%84%EC%9F%81" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 미국-중국 무역 전쟁 - 위키백과, 우리 모두의 백과사전</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">5. 🏠 부동산</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">서울 아파트 시장은 보유세 부과를 앞두고 매매가 늘면서 최근 가격이 하락세를 보이고 있다. 향후 세금 변화로 인해 시장은 여전히 ​​변동성이 클 것으로 예상됩니다. 전반적인 추세는 일정 기간 동안 하락세를 보인 후 안정화 방향으로 이동하고 있음을 나타냅니다.</div>
-          <div style="margin-top:8px"><a href="https://www.mk.co.kr/news/realestate/12018551" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → “세금 폭탄부터 피하고 보자”…서울 아파트 급매 거래 늘었다 - 매일경제</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">서울 아파트 시장은 최근 가격 상승세를 보이고 있으며, 일부 지역에서는 큰 폭의 상승세를 보이고 있습니다. 전문가들은 2027년부터 잠재적인 가격 하락을 예측합니다. 시장은 현재 규제 변화와 경제적 요인의 영향을 받습니다.</div>
+          <div style="margin-top:8px"><a href="https://www.youtube.com/watch?v=a7kH5fFZJ6E" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 부동산 하락 확대! 부자들은 다 판ᄃ...</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">6. 💱 환율·원자재</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">오늘 기준 달러/원 환율은 1,385.50원, 금 가격은 온스당 4,706.70달러, WTI 원유는 배럴당 101.02달러입니다.</div>
-          <div style="margin-top:8px"><a href="https://bscompany77.tistory.com/136" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → [2025.5.7 시황분석] 환율·금·유가·원자재 시세 총정리</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">현재 1달러 환율은 약 1,490원, 금 가격은 온스당 약 4,700달러 수준이다. 국제 금값은 오르고 있고, 미국 달러화는 여전히 강세를 보이고 있습니다.</div>
+          <div style="margin-top:8px"><a href="https://v.daum.net/v/0JpWfWztl9" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 국제유가 상승세에 환율 1500원, 17년만 최고…원자재도 '공급 충격'</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">7. 📊 경제 지표</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">미국 연방준비제도(Fed)는 금리를 안정적으로 유지할 가능성이 높지만 인플레이션은 여전히 ​​높아 글로벌 경제 지표에 영향을 미칠 것입니다. 한국 경제는 미국 소비자 지출 동향과 밀접하게 연관되어 있습니다. 최근 미국 인플레이션 데이터는 추가 금리 인하의 잠재적인 어려움을 시사합니다.</div>
-          <div style="margin-top:8px"><a href="https://www.joongang.co.kr/newsletter/moneylab/18609" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → [머니랩] 성큼 다가온 9월 금리인하…드디어 박스권 탈출? | 뉴스레터 ...</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">소비자물가지수(CPI)는 미국의 인플레이션을 측정하고 연준의 금리 결정에 영향을 미칩니다. 한국 경제는 미국과 한국의 상당한 금리 차이에 영향을 받는다. CPI는 경제 건전성과 통화 정책 방향을 나타내는 주요 지표입니다.</div>
+          <div style="margin-top:8px"><a href="https://www.tossbank.com/articles/cpi" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → CPI 발표로 FOMC 금리 결정을 예측할 수 있다고요? - 토스뱅크</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">8. 🏢 기업 뉴스</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">최근 M&A 소식에는 IMM Private Equity가 Airperast를 펀드로 전환하고 Maple Investment Partners가 Bililive를 인수하는 내용이 포함됩니다. 코리아 디스카운트 문제는 시장에 긍정적으로 해결될 수도 있다. 개정 자본시장법은 합병에 따른 불공정거래를 방지하는 것을 목적으로 한다.</div>
-          <div style="margin-top:8px"><a href="https://econ.ajou.ac.kr/econ/activity/seminar.do?mode=download&articleNo=321696&attachNo=287713" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → [PDF] 최근 5개년간 인수 ∙ 합병 공시 발표가 인수 기업의 주가에 ...</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">최근 M&A 소식에는 IMM Private Equity가 AirPasrst를 펀드로 이전한 것, Maple Investment Partners가 Biliviv를 인수한 것, 한화가 SK C&E를 인수할 계획 등이 있습니다.</div>
+          <div style="margin-top:8px"><a href="https://www.kcmi.re.kr/common/downloaddataw?fid=572&fgu=002003007&fty=004006" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → [PDF] 기업 소유구조가 국내 상장사간 인수합병에 미치는 영향</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">9. 🚗 자동차·전기차</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">현대차그룹과 기아차는 자율주행 기술을 고도화해 2029년까지 레벨 2++ 자율주행차를 선보일 계획이다. 자율주행차 생태계를 확대하고 생산라인에 로봇공학을 도입하겠다는 목표다. 현대·기아차도 하이브리드와 전기차 시장에 주력하고 있다.</div>
-          <div style="margin-top:8px"><a href="https://mauto.danawa.com/news/?Tab=N1,N4,P1,P02,P03&Stab=all&Brand=&Model=&HeadText=&NewsGroup=&SearchKey=press&SearchWord=%EA%B8%80%EB%A1%9C%EB%B2%8C%EC%98%A4%ED%86%A0%EB%89%B4%EC%8A%A4&Punit=10&useOldData=&Page=0&Work=detail&no=6009355" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → : 다나와 자동차</a></div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">현대차그룹은 2029년까지 자율주행차를 선보일 예정이며, 도심 주행능력 레벨 2++ 달성을 목표로 하고 있다. 또한 회사는 미래 모빌리티 솔루션을 위해 로봇 공학과 AI에 막대한 투자를 하고 있습니다.</div>
+          <div style="margin-top:8px"><a href="https://www.khan.co.kr/article/202604091630001" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 기아, ‘레벨2+’ 자율주행 탑재한 SDV 내년 말 개발 완료…아틀라스는...</a></div>
         </div>
         <div style="padding:18px 0;border-bottom:1px solid #F2F2F7">
           <div style="font-size:13px;font-weight:700;color:#1C1C1E;margin-bottom:8px">10. ⚠️ 리스크</div>
-          <div style="font-size:14px;color:#3C3C43;line-height:1.7">오늘의 주식시장 위험 점수는 100점 만점에 35점으로 보통 수준의 주의가 필요함을 나타냅니다. 주요 위험에는 지정학적 긴장과 잠재적인 인플레이션이 포함됩니다. 투자자들은 시장 신호를 면밀히 모니터링해야 합니다.</div>
+          <div style="font-size:14px;color:#3C3C43;line-height:1.7">주식시장의 현재 위험에는 높은 평가에 대한 우려와 지정학적 긴장이 포함됩니다. 인플레이션이나 이자율과 같은 경제적 요인도 위험을 야기합니다. 투자자들은 주의를 기울여야 합니다.</div>
           <div style="margin-top:8px"><a href="https://www.youtube.com/watch?v=5PsEzfNvCRA" style="font-size:11px;color:#007AFF;text-decoration:none">더 알아보기 → 미국시장, 지금 위험 경고등 켜졌다? 초보 투자자가 꼭 봐야 할 리스크 ...</a></div>
         </div>
   </div>
@@ -503,14 +531,20 @@
             options: {
               responsive: true,
               maintainAspectRatio: false,
+              interaction: { mode: 'index', intersect: false },
               plugins: {
                 legend: { display: false },
                 tooltip: {
-                  backgroundColor: 'rgba(28,28,30,0.9)',
+                  enabled: true,
+                  mode: 'index',
+                  intersect: false,
+                  backgroundColor: 'rgba(28,28,30,0.92)',
                   titleColor: '#FFFFFF',
                   bodyColor: '#EBEBF5',
+                  titleFont: { size: 12, weight: '600' },
+                  bodyFont: { size: 13 },
                   cornerRadius: 10,
-                  padding: 10,
+                  padding: 12,
                   displayColors: false,
                   callbacks: {
                     label: function(i) { return ' $' + i.formattedValue; }
@@ -532,7 +566,7 @@
         <div style="font-size:12px;font-weight:700;color:#8E8E93;margin-bottom:6px">지금은?</div>
         <div style="font-size:14px;color:#1C1C1E;line-height:1.6">안정적 중간 구간 — 추가 실적 발표 확인 후 판단.</div>
       </div>
-      <div style="margin-top:12px;font-size:13px;color:#3C3C43;line-height:1.7">오라클의 주가는 강력한 AI 수요와 기록적인 수익으로 인해 2025년에 급등했으며, 클라우드 인프라 수익도 크게 증가했습니다. 회사의 AI 기반 클라우드 서비스는 수요가 많아 상당한 수익 증가를 가져왔습니다. Oracle의 주식 실적은 클라우드 우선 전략으로의 성공적인 전환을 반영합니다.</div>
+      <div style="margin-top:12px;font-size:13px;color:#3C3C43;line-height:1.7">오라클의 2025년 수익은 AI 클라우드 수요에 힘입어 강력한 성장을 보였습니다. 주가는 87% 급등했지만 하락세에 직면했습니다. 분석가들은 $315-$355의 목표 가격과 함께 "매수" 등급을 유지합니다.</div>
   </div>
 
   <!-- 오늘의 전략 -->
